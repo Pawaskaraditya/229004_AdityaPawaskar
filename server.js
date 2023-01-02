@@ -4,6 +4,10 @@ const path=require("path");
 
 
 app.get("/",function(req,res){
+    res.send("Welcome to IACSD");
+});
+
+app.get("/home",function(req,res){
     res.sendFile(path.join(__dirname,"./public/index.html"));
 });
 
